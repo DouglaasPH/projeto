@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>About Us - RecuperaMente</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#4747eb",
+              "background-light": "#f8f9fa",
+              "background-dark": "#111121",
+              "text-light-primary": "#343a40",
+              "text-dark-primary": "#f8f9fa",
+              "text-light-secondary": "#636388",
+              "text-dark-secondary": "#a8b2d1",
+              "card-light": "#ffffff",
+              "card-dark": "#1b1b2e",
+              "accent-blue": "#a8d0e6",
+              "accent-lilac": "#c7b9e3",
+            },
+            fontFamily: {
+              display: ["Lexend", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              lg: "1rem",
+              xl: "1.5rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark font-display text-text-light-primary dark:text-text-dark-primary"
+  >
+    <div
+      class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden"
+    >
+      <!-- TopNavBar Component -->
+      <header
+        class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm"
+      >
+        <div class="container mx-auto px-4">
+          <div
+            class="flex items-center justify-between whitespace-nowrap border-b border-gray-200 dark:border-gray-700 py-3"
+          >
+            <div class="flex items-center gap-4">
+              <span class="material-symbols-outlined text-primary text-2xl"
+                >neurology</span
+              >
+              <h2
+                class="text-lg font-bold tracking-[-0.015em] text-text-light-primary dark:text-text-dark-primary"
+              >
+                RecuperaMente
+              </h2>
+            </div>
+            <nav class="hidden md:flex flex-1 justify-end gap-8">
+              <div class="flex items-center gap-9">
+                <a
+                  class="text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors"
+                  href="#"
+                  >Home</a
+                >
+                <a
+                  class="text-sm font-medium text-primary dark:text-primary"
+                  href="#"
+                  >About Us</a
+                >
+                <a
+                  class="text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors"
+                  href="#"
+                  >Features</a
+                >
+                <a
+                  class="text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors"
+                  href="#"
+                  >Contact</a
+                >
+              </div>
+              <div class="flex gap-2">
+                <button
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity"
+                >
+                  <span class="truncate">Sign Up</span>
+                </button>
+                <button
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-gray-200 dark:bg-card-dark text-text-light-primary dark:text-text-dark-primary text-sm font-bold leading-normal tracking-[0.015em] hover:bg-gray-300 dark:hover:bg-opacity-80 transition-colors"
+                >
+                  <span class="truncate">Log In</span>
+                </button>
+              </div>
+            </nav>
+            <button
+              class="md:hidden flex items-center justify-center rounded-lg h-10 w-10 bg-gray-200 dark:bg-card-dark text-text-light-primary dark:text-text-dark-primary"
+            >
+              <span class="material-symbols-outlined">menu</span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <main class="layout-container flex h-full grow flex-col">
+        <div class="px-4 py-10 md:py-16 lg:py-20 flex flex-1 justify-center">
+          <div
+            class="layout-content-container flex flex-col max-w-4xl flex-1 gap-12 md:gap-16"
+          >
+            <!-- PageHeading Component -->
+            <div class="flex flex-wrap justify-center text-center gap-3 p-4">
+              <div class="flex w-full flex-col items-center gap-4">
+                <p
+                  class="text-4xl md:text-5xl font-black leading-tight tracking-tighter text-text-light-primary dark:text-text-dark-primary"
+                >
+                  Our Story
+                </p>
+                <p
+                  class="text-base md:text-lg font-normal leading-normal max-w-2xl text-text-light-secondary dark:text-text-dark-secondary"
+                >
+                  Learn more about the team behind RecuperaMente and our mission
+                  to support student well-being.
+                </p>
+              </div>
+            </div>
+            <!-- Introduction Section -->
+            <section class="flex flex-col gap-4">
+              <h2
+                class="text-2xl md:text-3xl font-bold leading-tight tracking-tight px-4 pb-2 pt-5 text-center"
+              >
+                How RecuperaMente Was Born
+              </h2>
+              <p
+                class="text-base font-normal leading-relaxed text-text-light-primary dark:text-text-dark-primary px-4"
+              >
+                RecuperaMente started as a project at IFPE, born from a shared
+                passion for helping students navigate the challenges of academic
+                life. Our goal is to provide a tool that not only helps in
+                recovery from burnout but also promotes a healthier and more
+                balanced academic journey.
+              </p>
+            </section>
+            <!-- Team Section -->
+            <section class="flex flex-col gap-8">
+              <h2
+                class="text-2xl md:text-3xl font-bold leading-tight tracking-tight px-4 pb-2 pt-5 text-center"
+              >
+                Meet the Team
+              </h2>
+              <!-- Team Grid -->
+              <div
+                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 px-4"
+              >
+                <!-- Team Member Card 1 -->
+                <div
+                  class="flex flex-col items-center gap-4 rounded-xl p-6 bg-card-light dark:bg-card-dark border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+                >
+                  <div class="relative w-28 h-28">
+                    <img
+                      class="w-full h-full rounded-full object-cover border-4 border-accent-blue/50"
+                      data-alt="Stylized portrait photo of Douglas Phelipe"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdfXrrWPGOXHEnwRyn9bpvyLtuAG1blgluCq7i1fdaAdxuI7migoS50FzAgYcYVJdXPSBUK3ReXJG3Zk9FC1LRS3XHVCsAwqOX0S_HX8V65leoUBCQOK-UYeK9-7pI_qbsRhcynf2UGAfg6VSCebpqlFzUo48BC9slrs2WlsYxbUmuS5Z3A4_7uRxTeipxvTf8-Oz3ZfvdW9FNUbF6XDOJ4i3mbdEa-IHA5hx-jAVII5CptFs8w5EF06C_jXfUFtlBdvJg_qikdkSe"
+                    />
+                  </div>
+                  <div class="text-center">
+                    <h3
+                      class="text-lg font-bold text-text-light-primary dark:text-text-dark-primary"
+                    >
+                      Douglas Phelipe
+                    </h3>
+                    <p
+                      class="text-sm text-text-light-secondary dark:text-text-dark-secondary"
+                    >
+                      Lead Developer
+                    </p>
+                  </div>
+                </div>
+                <!-- Team Member Card 2 -->
+                <div
+                  class="flex flex-col items-center gap-4 rounded-xl p-6 bg-card-light dark:bg-card-dark border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+                >
+                  <div class="relative w-28 h-28">
+                    <img
+                      class="w-full h-full rounded-full object-cover border-4 border-accent-lilac/50"
+                      data-alt="Stylized portrait photo of Jaldson Arthur"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-sth_MUORwIkp2hd1c-nzDVC1pLklnNymjhNCtyIwW6WPNh5Anuf87BqsnE8WacFfHN1Qe7JQfsnXXXtB3s9TD7tR70uZYr1e_VxQQlBPN3a3YpScrGiMcby7kUWyEs0vdfM65dZwLbga2EOJy0aMHXoyFgwctBhBhvpnl_mBdIKdPiECMB3nSZYbSEbEnk26pvVhg6yLuty2L0d2NhsDvND4Vdz4DrUs4EMnrwwZFCGPBxfLMpFSjHeMJO7AByFxhigUeFE_3ED2"
+                    />
+                  </div>
+                  <div class="text-center">
+                    <h3
+                      class="text-lg font-bold text-text-light-primary dark:text-text-dark-primary"
+                    >
+                      Jaldson Arthur
+                    </h3>
+                    <p
+                      class="text-sm text-text-light-secondary dark:text-text-dark-secondary"
+                    >
+                      UI/UX Designer
+                    </p>
+                  </div>
+                </div>
+                <!-- Team Member Card 3 -->
+                <div
+                  class="flex flex-col items-center gap-4 rounded-xl p-6 bg-card-light dark:bg-card-dark border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+                >
+                  <div class="relative w-28 h-28">
+                    <img
+                      class="w-full h-full rounded-full object-cover border-4 border-accent-blue/50"
+                      data-alt="Stylized portrait photo of Arthur Teixeira"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmkY8oj8NPHbvgdJwvGvsqrZ-xWwLxKa0mUnc3Yu9UjWI7mmiIJpVYJybl64JPgeBLuddqJcMKZ2TeEqI7TfB3Wd-ghZQ572QX1TZftncLw2yOzLMm6rdHS-WVHL7SoMZsC05pc3O5ABIyOl9rQfqqUCzuPP5QUWXDBELn647yLp7gYwuBBBXBThaiQwOyLx2G06nxPRTdkcE3BC5xWnHIjvkEmIXYbmwzTfcQtiOjfIzKP8a0PPMiueuL5YhddtyjhPA6_FbHeAcQ"
+                    />
+                  </div>
+                  <div class="text-center">
+                    <h3
+                      class="text-lg font-bold text-text-light-primary dark:text-text-dark-primary"
+                    >
+                      Arthur Teixeira
+                    </h3>
+                    <p
+                      class="text-sm text-text-light-secondary dark:text-text-dark-secondary"
+                    >
+                      Backend Specialist
+                    </p>
+                  </div>
+                </div>
+                <!-- Team Member Card 4 -->
+                <div
+                  class="flex flex-col items-center gap-4 rounded-xl p-6 bg-card-light dark:bg-card-dark border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+                >
+                  <div class="relative w-28 h-28">
+                    <img
+                      class="w-full h-full rounded-full object-cover border-4 border-accent-lilac/50"
+                      data-alt="Stylized portrait photo of João Vinicius"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGhCirvscx_WFtc2yNtQM748IGaivHx2n-g1ePVjQUvBdXiUzq7hLSWvoazmMH3VrKRu96WeQ1XMj96JSAOc8nbns3gThHEHPzeBw2H8eGe4eI4kpxo5w47ifsDz8mDh2gWAvCMi_1gCXtTHTXQ8QtpV9H6I6s9JBrdJe7V2Jx9cEacwjXsxjRlCwTPIJBqjdYw-gRqpJ_Qi0q0Mz_GvJCDZSATdzdGHesLwutc9VsotACyd2dZl-K27ZjTPqd7yuhKaUXpmR5KPai"
+                    />
+                  </div>
+                  <div class="text-center">
+                    <h3
+                      class="text-lg font-bold text-text-light-primary dark:text-text-dark-primary"
+                    >
+                      João Vinicius
+                    </h3>
+                    <p
+                      class="text-sm text-text-light-secondary dark:text-text-dark-secondary"
+                    >
+                      Project Manager
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+      <!-- Footer Component -->
+      <footer
+        class="bg-card-light dark:bg-card-dark border-t border-gray-200 dark:border-gray-700"
+      >
+        <div class="container mx-auto px-4 py-8">
+          <div
+            class="flex flex-col md:flex-row justify-between items-center gap-6"
+          >
+            <div class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-primary text-2xl"
+                >neurology</span
+              >
+              <span
+                class="text-base font-bold text-text-light-primary dark:text-text-dark-primary"
+                >RecuperaMente</span
+              >
+            </div>
+            <nav class="flex gap-6 text-sm font-medium">
+              <a class="hover:text-primary transition-colors" href="#">About</a>
+              <a class="hover:text-primary transition-colors" href="#"
+                >Privacy Policy</a
+              >
+              <a class="hover:text-primary transition-colors" href="#"
+                >Terms of Service</a
+              >
+            </nav>
+            <p
+              class="text-sm text-text-light-secondary dark:text-text-dark-secondary"
+            >
+              © 2024 RecuperaMente. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

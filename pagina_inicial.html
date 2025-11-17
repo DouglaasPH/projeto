@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>RecuperaMente - Vença o Cansaço Acadêmico</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+    </style>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#C8B6FF",
+              secondary: "#A2D2FF",
+              "background-light": "#F8F9FA",
+              "background-dark": "#111121",
+              "text-light": "#343A40",
+              "text-dark": "#EAEAEA",
+            },
+            fontFamily: {
+              display: ["Lexend", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "1rem",
+              lg: "1.5rem",
+              xl: "2rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="font-display bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark"
+  >
+    <div
+      class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden"
+    >
+      <div class="layout-container flex h-full grow flex-col">
+        <!-- TopNavBar -->
+        <header
+          class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm"
+        >
+          <div
+            class="mx-auto flex max-w-6xl items-center justify-between whitespace-nowrap border-b border-solid border-gray-200/50 dark:border-gray-700/50 px-6 py-4"
+          >
+            <div
+              class="flex items-center gap-4 text-text-light dark:text-text-dark"
+            >
+              <div class="size-6 text-primary">
+                <svg
+                  fill="none"
+                  viewbox="0 0 48 48"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z"
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                  ></path>
+                </svg>
+              </div>
+              <h2 class="text-xl font-bold leading-tight tracking-[-0.015em]">
+                RecuperaMente
+              </h2>
+            </div>
+            <nav class="hidden items-center gap-8 md:flex">
+              <a
+                class="text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary"
+                href="#"
+                >Início</a
+              >
+              <a
+                class="text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary"
+                href="#"
+                >Calendário</a
+              >
+              <a
+                class="text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary"
+                href="#"
+                >Sobre Nós</a
+              >
+              <a
+                class="text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary"
+                href="#"
+                >Contato</a
+              >
+              <a
+                class="text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary"
+                href="#"
+                >Política de Privacidade</a
+              >
+            </nav>
+          </div>
+        </header>
+        <main class="flex flex-1 justify-center py-5">
+          <div
+            class="layout-content-container flex flex-col max-w-6xl flex-1 px-6"
+          >
+            <!-- HeroSection -->
+            <section class="py-16 sm:py-24">
+              <div
+                class="flex flex-col-reverse items-center gap-12 lg:flex-row lg:gap-16"
+              >
+                <div
+                  class="flex flex-col gap-8 text-center lg:text-left lg:w-1/2"
+                >
+                  <div class="flex flex-col gap-4">
+                    <h1
+                      class="text-4xl font-black leading-tight tracking-[-0.033em] text-text-light dark:text-white sm:text-5xl lg:text-6xl"
+                    >
+                      Recupere sua energia e vença o cansaço acadêmico.
+                    </h1>
+                    <h2
+                      class="text-base font-normal leading-relaxed text-text-light/80 dark:text-text-dark/80 sm:text-lg"
+                    >
+                      Crie um calendário de recuperação personalizado com pausas
+                      inteligentes para estudar com mais equilíbrio e bem-estar.
+                    </h2>
+                  </div>
+                  <button
+                    class="flex w-full cursor-pointer items-center justify-center self-center overflow-hidden rounded-full h-12 px-6 bg-primary text-text-light dark:text-background-dark text-base font-bold leading-normal tracking-[0.015em] transition-transform hover:scale-105 sm:w-auto lg:self-start"
+                  >
+                    <span class="truncate">Começar meu calendário</span>
+                  </button>
+                </div>
+                <div class="w-full lg:w-1/2">
+                  <div
+                    class="aspect-square w-full rounded-lg bg-cover bg-center"
+                    data-alt="Soft, abstract illustration of a student peacefully studying near a window with plants, in pastel colors."
+                    style="
+                      background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCOp5h42Napok0ZPlP5oEnWJgK4r-F0x7T1ZSoe-nYwVXofFcPTdsPRuKhCyMiVdwg3n6pO0kXCqS94RiKZGZet_-Ql0DF35geYgAAw-w1CP0tsbxA6GwuX6A87hqz2leEohXEX3yq4ffPpXBs4hZU7L_5adwcquKhoYTG3LNgIfiMumr7q3HPnjMVJM9axpOb1Va07DlfOry0DvRHZSukfN-g-hjmGfChBKq1TTd8pJPjM0g6Zpe0qRpcCtjaU_KGSpU91LaZBaJlm');
+                    "
+                  ></div>
+                </div>
+              </div>
+            </section>
+            <!-- Section: What is Burnout -->
+            <section class="py-16 sm:py-24 text-center">
+              <div class="max-w-3xl mx-auto">
+                <h2
+                  class="text-3xl font-bold leading-tight tracking-[-0.015em] pb-4 text-text-light dark:text-white"
+                >
+                  O que é burnout acadêmico?
+                </h2>
+                <p
+                  class="text-base font-normal leading-relaxed text-text-light/80 dark:text-text-dark/80"
+                >
+                  O burnout acadêmico é um estado de exaustão emocional, física
+                  e mental causado pelo estresse prolongado relacionado aos
+                  estudos. Ele se manifesta através de sentimentos de
+                  esgotamento, cinismo em relação às atividades acadêmicas e uma
+                  sensação de ineficácia, impactando negativamente o desempenho
+                  e o bem-estar do estudante.
+                </p>
+              </div>
+            </section>
+            <!-- Section: How it Works -->
+            <section class="py-16 sm:py-24">
+              <div class="flex flex-col items-center gap-4 text-center">
+                <h2
+                  class="text-3xl font-bold leading-tight tracking-[-0.015em] text-text-light dark:text-white"
+                >
+                  Como funciona?
+                </h2>
+                <p
+                  class="max-w-2xl text-base font-normal leading-relaxed text-text-light/80 dark:text-text-dark/80"
+                >
+                  Cuidar da sua saúde mental nunca foi tão simples. Siga estes
+                  passos para criar um plano que funciona para você.
+                </p>
+              </div>
+              <div
+                class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3"
+              >
+                <!-- Card 1 -->
+                <div
+                  class="flex flex-col gap-4 rounded-lg bg-white dark:bg-background-dark/50 p-8 shadow-sm transition-shadow hover:shadow-lg"
+                >
+                  <div
+                    class="flex h-12 w-12 items-center justify-center rounded-full bg-secondary/20 text-secondary"
+                  >
+                    <span class="material-symbols-outlined text-2xl"
+                      >timer</span
+                    >
+                  </div>
+                  <h3 class="text-xl font-bold text-text-light dark:text-white">
+                    Pausas Inteligentes
+                  </h3>
+                  <p
+                    class="text-sm font-normal leading-relaxed text-text-light/80 dark:text-text-dark/80"
+                  >
+                    Integramos pausas estratégicas em seu cronograma para
+                    maximizar a retenção de informações e prevenir o
+                    esgotamento.
+                  </p>
+                </div>
+                <!-- Card 2 -->
+                <div
+                  class="flex flex-col gap-4 rounded-lg bg-white dark:bg-background-dark/50 p-8 shadow-sm transition-shadow hover:shadow-lg"
+                >
+                  <div
+                    class="flex h-12 w-12 items-center justify-center rounded-full bg-primary/20 text-primary"
+                  >
+                    <span class="material-symbols-outlined text-2xl"
+                      >calendar_month</span
+                    >
+                  </div>
+                  <h3 class="text-xl font-bold text-text-light dark:text-white">
+                    Calendário Flexível
+                  </h3>
+                  <p
+                    class="text-sm font-normal leading-relaxed text-text-light/80 dark:text-text-dark/80"
+                  >
+                    Crie e ajuste seu calendário de estudos facilmente,
+                    adaptando-o à sua rotina e necessidades pessoais para um
+                    aprendizado sem estresse.
+                  </p>
+                </div>
+                <!-- Card 3 -->
+                <div
+                  class="flex flex-col gap-4 rounded-lg bg-white dark:bg-background-dark/50 p-8 shadow-sm transition-shadow hover:shadow-lg"
+                >
+                  <div
+                    class="flex h-12 w-12 items-center justify-center rounded-full bg-secondary/20 text-secondary"
+                  >
+                    <span class="material-symbols-outlined text-2xl"
+                      >self_improvement</span
+                    >
+                  </div>
+                  <h3 class="text-xl font-bold text-text-light dark:text-white">
+                    Dicas de Bem-Estar
+                  </h3>
+                  <p
+                    class="text-sm font-normal leading-relaxed text-text-light/80 dark:text-text-dark/80"
+                  >
+                    Receba dicas práticas sobre mindfulness, exercícios e
+                    técnicas de relaxamento para apoiar sua saúde mental durante
+                    os estudos.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </main>
+        <!-- Footer -->
+        <footer class="bg-gray-100 dark:bg-background-dark/50">
+          <div
+            class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 px-6 py-8 text-sm text-text-light/60 dark:text-text-dark/60 sm:flex-row"
+          >
+            <p>© 2024 RecuperaMente. Todos os direitos reservados.</p>
+            <div class="flex flex-wrap justify-center gap-6">
+              <a class="hover:text-primary dark:hover:text-primary" href="#"
+                >Sobre Nós</a
+              >
+              <a class="hover:text-primary dark:hover:text-primary" href="#"
+                >Contato</a
+              >
+              <a class="hover:text-primary dark:hover:text-primary" href="#"
+                >Política de Privacidade</a
+              >
+              <a class="hover:text-primary dark:hover:text-primary" href="#"
+                >Termos de Uso</a
+              >
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
