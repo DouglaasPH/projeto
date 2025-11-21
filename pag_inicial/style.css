@@ -1,0 +1,414 @@
+/* Reset e Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lexend', sans-serif;
+  background-color: #F8F9FA; /* background-light */
+  color: #343A40; /* text-light */
+}
+
+/* Material Symbols */
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+/* Layout Wrapper */
+.page-wrapper {
+  position: relative;
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.layout-container {
+  display: flex;
+  height: 100%;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+/* Header */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background-color: rgba(248, 249, 250, 0.8); /* bg-background-light/80 */
+  backdrop-filter: blur(4px);
+}
+
+.header-inner {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 72rem; /* max-w-6xl */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  white-space: nowrap;
+  border-bottom: 1px solid rgba(229, 231, 235, 0.5); /* border-gray-200/50 */
+  padding: 1rem 1.5rem; /* py-4 px-6 */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* gap-4 */
+  color: #343A40;
+}
+
+.logo-icon {
+  width: 1.5rem; /* size-6 */
+  height: 1.5rem;
+  color: #C8B6FF; /* primary */
+}
+
+.logo-text {
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+}
+
+/* Navigation */
+.desktop-nav {
+  display: none; /* hidden on mobile */
+}
+
+.nav-link {
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500;
+  line-height: 1.5;
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.nav-link:hover {
+  color: #C8B6FF; /* hover:text-primary */
+}
+
+/* Main Content Area */
+.main-content {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  padding-top: 1.25rem; /* py-5 */
+  padding-bottom: 1.25rem;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 72rem; /* max-w-6xl */
+  flex: 1;
+  padding-left: 1.5rem; /* px-6 */
+  padding-right: 1.5rem;
+}
+
+/* Hero Section */
+.hero-section {
+  padding-top: 4rem; /* py-16 */
+  padding-bottom: 4rem;
+}
+
+.hero-layout {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 3rem; /* gap-12 */
+}
+
+.hero-text-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* gap-8 */
+  text-align: center;
+  width: 100%;
+}
+
+.hero-headlines {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* gap-4 */
+}
+
+.hero-title {
+  font-size: 2.25rem; /* text-4xl */
+  font-weight: 900;
+  line-height: 1.25;
+  letter-spacing: -0.033em;
+  color: #343A40;
+}
+
+.hero-subtitle {
+  font-size: 1rem; /* text-base */
+  font-weight: 400;
+  line-height: 1.625; /* leading-relaxed */
+  color: rgba(52, 58, 64, 0.8); /* text-light/80 */
+}
+
+.cta-button {
+  display: flex;
+  width: 100%;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  overflow: hidden;
+  border-radius: 9999px; /* rounded-full */
+  height: 3rem; /* h-12 */
+  padding-left: 1.5rem; /* px-6 */
+  padding-right: 1.5rem;
+  background-color: #C8B6FF; /* bg-primary */
+  color: #343A40; /* text-text-light */
+  font-size: 1rem; /* text-base */
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.015em;
+  border: none;
+  transition: transform 0.15s;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+}
+
+.hero-image-column {
+  width: 100%;
+}
+
+.hero-image {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* aspect-square */
+  border-radius: 0.5rem; /* rounded-lg */
+  background-position: center;
+  background-size: cover;
+}
+
+/* Text Section (What is Burnout) */
+.text-section {
+  padding-top: 4rem; /* py-16 */
+  padding-bottom: 4rem;
+  text-align: center;
+}
+
+.text-container {
+  max-width: 48rem; /* max-w-3xl */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-title {
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+  color: #343A40;
+  padding-bottom: 1rem; /* pb-4 (only for first section title style) */
+}
+
+/* Note: How it works section reuses section-title but without padding-bottom in HTML classes, 
+   however in CSS purely, we can target context if needed. 
+   In the original HTML, `pb-4` was only on "What is Burnout". */
+.text-section .section-title {
+  padding-bottom: 1rem;
+}
+
+.section-body {
+  font-size: 1rem; /* text-base */
+  font-weight: 400;
+  line-height: 1.625; /* leading-relaxed */
+  color: rgba(52, 58, 64, 0.8);
+}
+
+/* Features Section */
+.features-section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.features-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem; /* gap-4 */
+  text-align: center;
+}
+
+.max-w-body {
+  max-width: 42rem; /* max-w-2xl */
+}
+
+.features-grid {
+  margin-top: 3rem; /* mt-12 */
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem; /* gap-8 */
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* gap-4 */
+  border-radius: 0.5rem; /* rounded-lg */
+  background-color: #ffffff;
+  padding: 2rem; /* p-8 */
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* shadow-sm */
+  transition: box-shadow 0.15s;
+}
+
+.feature-card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+}
+
+.icon-wrapper {
+  display: flex;
+  height: 3rem; /* h-12 */
+  width: 3rem; /* w-12 */
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px; /* rounded-full */
+}
+
+.icon-wrapper.secondary {
+  background-color: rgba(162, 210, 255, 0.2); /* secondary/20 */
+  color: #A2D2FF; /* secondary */
+}
+
+.icon-wrapper.primary {
+  background-color: rgba(200, 182, 255, 0.2); /* primary/20 */
+  color: #C8B6FF; /* primary */
+}
+
+.icon-lg {
+  font-size: 1.5rem; /* text-2xl */
+}
+
+.card-title {
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 700;
+  color: #343A40;
+}
+
+.card-text {
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 400;
+  line-height: 1.625;
+  color: rgba(52, 58, 64, 0.8);
+}
+
+/* Footer */
+.site-footer {
+  background-color: #F3F4F6; /* bg-gray-100 */
+}
+
+.footer-inner {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 72rem; /* max-w-6xl */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem; /* gap-6 */
+  padding: 2rem 1.5rem; /* py-8 px-6 */
+  font-size: 0.875rem; /* text-sm */
+  color: rgba(52, 58, 64, 0.6); /* text-light/60 */
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem; /* gap-6 */
+}
+
+.footer-link {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.15s;
+}
+
+.footer-link:hover {
+  color: #C8B6FF; /* hover:text-primary */
+}
+
+/* Utility */
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Responsive - Media Queries */
+
+/* SM (640px) */
+@media (min-width: 640px) {
+  .hero-section, .text-section, .features-section {
+    padding-top: 6rem; /* sm:py-24 */
+    padding-bottom: 6rem;
+  }
+
+  .hero-title {
+    font-size: 3rem; /* sm:text-5xl */
+  }
+
+  .hero-subtitle {
+    font-size: 1.125rem; /* sm:text-lg */
+  }
+
+  .cta-button {
+    width: auto;
+  }
+
+  .footer-inner {
+    flex-direction: row;
+  }
+}
+
+/* MD (768px) */
+@media (min-width: 768px) {
+  .desktop-nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem; /* gap-8 */
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr); /* md:grid-cols-2 */
+  }
+}
+
+/* LG (1024px) */
+@media (min-width: 1024px) {
+  .hero-layout {
+    flex-direction: row;
+    gap: 4rem; /* lg:gap-16 */
+  }
+
+  .hero-text-column {
+    text-align: left;
+    width: 50%; /* lg:w-1/2 */
+  }
+
+  .cta-button {
+    align-self: flex-start; /* lg:self-start */
+  }
+  
+  .hero-image-column {
+    width: 50%; /* lg:w-1/2 */
+  }
+
+  .hero-title {
+    font-size: 3.75rem; /* lg:text-6xl */
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(3, 1fr); /* lg:grid-cols-3 */
+  }
+}

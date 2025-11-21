@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Adicionar Nova Atividade - RecuperaMente</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header class="app-header">
+        <div class="header-content">
+          <div class="logo-section">
+            <div class="logo-icon">
+              <svg
+                class="icon-svg"
+                fill="none"
+                viewbox="0 0 48 48"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z"
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+            <h2 class="logo-text">RecuperaMente</h2>
+          </div>
+          <div class="header-actions">
+            <button class="icon-btn gray">
+              <span class="material-symbols-outlined text-xl">calendar_today</span>
+            </button>
+            <button class="icon-btn primary">
+              <span class="material-symbols-outlined text-xl">add</span>
+            </button>
+            <button class="icon-btn gray">
+              <span class="material-symbols-outlined text-xl">person</span>
+            </button>
+            <button class="icon-btn gray">
+              <span class="material-symbols-outlined text-xl">logout</span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <main class="main-container">
+        <div class="content-wrapper">
+          <div class="page-header">
+            <h1 class="page-title">Adicionar Nova Atividade</h1>
+            <p class="page-subtitle">
+              Adicione sessões de estudo, pausas ou outros compromissos ao seu
+              plano de recuperação.
+            </p>
+          </div>
+
+          <div class="layout-grid">
+            <div class="form-card">
+              <div class="form-grid">
+                <label class="form-field full-width">
+                  <p class="field-label">Título da atividade</p>
+                  <input
+                    class="form-input"
+                    placeholder="Ex: Sessão de Estudo de Biologia"
+                    type="text"
+                  />
+                </label>
+
+                <label class="form-field">
+                  <p class="field-label">Categoria</p>
+                  <div class="input-wrapper">
+                    <select class="form-select">
+                      <option value="estudo">Estudo</option>
+                      <option value="trabalho">Trabalho</option>
+                      <option value="descanso">Descanso</option>
+                      <option value="outro">Outro</option>
+                    </select>
+                    <span class="material-symbols-outlined icon-right">unfold_more</span>
+                  </div>
+                </label>
+
+                <label class="form-field">
+                  <p class="field-label">Duração</p>
+                  <div class="input-wrapper">
+                    <span class="material-symbols-outlined icon-left">schedule</span>
+                    <input
+                      class="form-input with-icon-left"
+                      placeholder="1 hora 30 min"
+                      type="text"
+                    />
+                  </div>
+                </label>
+
+                <label class="form-field">
+                  <p class="field-label">Data</p>
+                  <div class="input-wrapper">
+                    <input class="form-input" type="date" />
+                  </div>
+                </label>
+
+                <label class="form-field">
+                  <p class="field-label">Horário</p>
+                  <div class="input-wrapper">
+                    <input class="form-input" type="time" />
+                  </div>
+                </label>
+
+                <div class="form-field full-width">
+                  <p class="field-label">Lembrete</p>
+                  <div class="checkbox-group">
+                    <label class="checkbox-label">
+                      <input class="form-checkbox" type="checkbox" />
+                      <span class="checkbox-text">15 minutos antes</span>
+                    </label>
+                    <label class="checkbox-label">
+                      <input class="form-checkbox" type="checkbox" />
+                      <span class="checkbox-text">1 hora antes</span>
+                    </label>
+                    <label class="checkbox-label">
+                      <input class="form-checkbox" type="checkbox" />
+                      <span class="checkbox-text">No dia anterior</span>
+                    </label>
+                  </div>
+                </div>
+
+                <label class="form-field full-width">
+                  <p class="field-label">
+                    Notas <span class="label-hint">(opcional)</span>
+                  </p>
+                  <textarea
+                    class="form-textarea"
+                    placeholder="Adicione links, tópicos ou qualquer outra informação relevante aqui..."
+                  ></textarea>
+                </label>
+              </div>
+            </div>
+
+            <div class="preview-column">
+              <div class="preview-card">
+                <h3 class="preview-title">Pré-visualização</h3>
+                <div class="preview-box">
+                  <div class="preview-bar"></div>
+                  <div class="preview-content">
+                    <p class="preview-item-title">Sessão de Estudo de Biologia</p>
+                    <p class="preview-item-time">14:00 - 15:30</p>
+                    <div class="preview-tag">
+                      <p class="tag-text">Estudo</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="preview-footer">
+                  É assim que sua atividade aparecerá no calendário.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="page-actions">
+            <button class="btn-cancel">Cancelar</button>
+            <button class="btn-save">Salvar no calendário</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
