@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>RecuperaMente - Login</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-container">
+      <main class="login-wrapper">
+        <div class="login-card">
+          <div class="card-content">
+            <div class="card-header">
+              <h1 class="app-title">RecuperaMente</h1>
+              <p class="app-subtitle">
+                Bem-vindo(a) de volta! Acesse sua conta.
+              </p>
+            </div>
+            <form class="login-form">
+              <div class="form-fields">
+                <label class="field-label-group">
+                  <p class="label-text">E-mail ou Usuário</p>
+                  <div class="input-wrapper">
+                    <span class="material-symbols-outlined icon-left">mail</span>
+                    <input
+                      class="form-input"
+                      placeholder="Digite seu e-mail ou usuário"
+                      type="email"
+                      value=""
+                    />
+                  </div>
+                </label>
+                <label class="field-label-group">
+                  <p class="label-text">Senha</p>
+                  <div class="input-wrapper">
+                    <span class="material-symbols-outlined icon-left">lock</span>
+                    <input
+                      class="form-input with-action"
+                      placeholder="Digite sua senha"
+                      type="password"
+                      value=""
+                    />
+                    <button class="toggle-visibility-btn" type="button">
+                      <span class="material-symbols-outlined">visibility</span>
+                    </button>
+                  </div>
+                </label>
+              </div>
+              <div class="form-actions">
+                <a class="forgot-password-link" href="#">Esqueceu sua senha?</a>
+              </div>
+              <button class="submit-btn">
+                <span class="truncate">Entrar</span>
+              </button>
+            </form>
+          </div>
+          <div class="card-footer">
+            <p class="footer-text">
+              Ainda não tem uma conta?
+              <a class="signup-link" href="#">Criar conta</a>
+            </p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
